@@ -1,0 +1,7 @@
+{
+  "name": "mro2021",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

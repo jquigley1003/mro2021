@@ -12,9 +12,9 @@ ion-header {
 }
 
 
-.home-container {
+.about-container {
   height: 50em;
-  background-image: url(../../assets/PhilWorkingOnEngine.jpg);
+  background-image: url(../../assets/PhilWithArmOnPlaneTalking.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -29,31 +29,31 @@ ion-header {
   }
 }
 
-.home-text-container {
+.about-text-container {
   position: absolute;
   left: 0;
   right: 0;
   top: 40%;
 }
 
-.home-text-container strong {
+.about-text-container strong {
   // font-size: 3.5vh;
   font-size: 7vh;
   color: #fff;
   text-shadow: 5px 5px 5px black;
 }
 
-.home-text-container p {
+.about-text-container p {
   font-size: 3vh;
   // font-size: 2.5vh;
   color: #fff;
   margin: 0;
 }
 
-.home-text-container a {
+.about-text-container a {
   text-decoration: none;
 }
 
-.home-col {
+.about-col {
   background: var(--ion-color-secondary);
 }

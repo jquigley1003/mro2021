@@ -1,0 +1,119 @@
+<ion-header [translucent]="true">
+  <app-my-menubar></app-my-menubar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-no-padding">
+    <ion-row class="about-row">
+      <ion-col size="12" class="ion-no-padding">
+        <!-- <ion-header [translucent]="true">
+          <app-my-menubar></app-my-menubar>
+        </ion-header> -->
+        <div class="about-container mobile-bg-style-scroll">
+          <div class="about-text-container">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <p #aboutTitle class="about-title"><strong>About</strong></p>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>   
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="8"
+       class="ion-padding about-col ion-text-left">
+        <p>
+          <b>MRO Management Services</b> is dedicated to providing unparalleled customer 
+          service on engine Overhaul (OH), Repair (RP), and Hot Section Inspection (HSI) 
+          maintenance events. I have access to and as needed will work with engineering 
+          partners who have all previously worked at Pratt & Whitney Canada and together 
+          offer over 150 years combined experience specific to PT6A, PW300, PW500 and PW600 
+          series engine models. I will work with engineers with knowledge specific to your 
+          engine model to assure you receive a reliable engine in a timely manner at a price 
+          that makes sense to you.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="8" 
+      class="ion-padding about-col ion-text-center">
+        <ion-button expand="block" (click)="toggleEngine()">
+          Engine Repair or Overhaul Management
+        </ion-button>
+        <div *ngIf="showEngine">
+          <h3>From start to finish, proposal to invoice, we provide personalized 
+            service including:</h3>
+            <ion-list>
+              <ion-item>
+                Review of engine maintenance records and solicitation for cost proposals 
+                from independent, manufacturer authorized, and OEM engine repair and overhaul 
+                facilities.
+              </ion-item>
+              <ion-item>
+                Comparative analysis of facilities with measures on fixed pricing, 
+                variable pricing, induction time, turn-time, warranty, rental engine 
+                availability, and pricing.
+              </ion-item>
+              <ion-item>
+                Review of data with customer and assistance in engine maintenance facility selection.
+              </ion-item>
+              <ion-item>
+                Coordination of engine maintenance and communication with the selected 
+                engine maintenance facility including provision of weekly status updates 
+                to the customer.
+              </ion-item>
+              <ion-item>
+                Pursuit of all opportunities for special warranty coverages and final 
+                invoice negotiations.
+              </ion-item>
+              <ion-item>
+                Service assurance of satisfaction via diligent oversight of your engines 
+                while representing your interests.
+              </ion-item>
+            </ion-list>
+        </div>
+        <ion-button expand="block" (click)="toggleDamage()">
+          Damage Control
+        </ion-button>
+        <div *ngIf="showDamage">
+          <p class="ion-text-left">Many customers depend on engine maintenance facility shops to work in 
+            their best interest, but often this does not go as expected, leaving 
+            customers faced with a situation where they do not feel they are getting 
+            what they expected at the agreed upon price. Resolving these types of 
+            situations is what I excel at and where my decades of process knowledge 
+            and technical and business experience will work to your benefit. Please 
+            allow me to step in as your “Turbine Engine Advocate” to manage the 
+            situation and get your engine back on track and on budget.</p>
+        </div>
+        <ion-button expand="block" (click)="toggleWarranty()">
+          Warranty Claim Negotiation Assistance
+        </ion-button>
+        <div *ngIf="showWarranty">
+          <p class="ion-text-left">Some aftermarket engine maintenance companies are not directly affiliated 
+            with or authorized by the engine manufacturer. Some companies outsource 
+            warranty administration functions and may not work in the best interest of 
+            their customers. Whatever the situation, I will work effectively with 
+            engine manufacturer, manufacturer-authorized, or independent 
+            engine-maintenance company to assure you receive fair warranty coverage.</p>
+        </div>
+        <ion-button expand="block" (click)="toggleInsurance()">
+          Insurance Claim Negotiation Assistance
+        </ion-button>
+        <div *ngIf="showInsurance">
+          <p class="ion-text-left">Insurance companies have claims adjusters on their payroll to mitigate 
+            claims payout cost to their company. Most insurance adjusters handle both 
+            airframe and engine for multiple manufacturers and are not experts on your 
+            engine model. Please allow me to lend my experience to assure your best 
+            interests are being looked after and assure your cost and downtime are 
+            kept to a minimum.</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <img src="../../assets/engine-plane-repair.jpg" alt="full image of plane engine being repaired" >
+      </ion-col>
+    </ion-row>
+    <app-footer></app-footer>
+  </ion-grid>
+</ion-content>

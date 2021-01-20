@@ -1,0 +1,22 @@
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+ion-menu-button {
+  color: var(--ion-color-tertiary);
+}
+
+ion-button {
+  --background-hover: var(--ion-color-secondary);
+}
+
+.desktop {
+  .link {
+    --color: var(--ion-color-tertiary);
+  }
+ 
+  .active-link {
+    --color: var(--ion-color-light);
+  }
+}

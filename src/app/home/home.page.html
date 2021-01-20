@@ -1,20 +1,107 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+  <app-my-menubar></app-my-menubar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid class="ion-no-padding">
+    <ion-row class="home-row">
+      <ion-col size="12" class="ion-no-padding">
+        <!-- <ion-header [translucent]="true">
+          <app-my-menubar></app-my-menubar>
+        </ion-header> -->
+        <div class="home-container mobile-bg-style-scroll">
+          <div class="home-text-container">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <p #aboutTitle class="home-title"><strong>Home</strong></p>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>   
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-no-margin ion-padding home-col">
+        <ion-row class="ion-justify-content-center">
+          <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4" 
+          class="ion-no-margin ion-padding ion-text-center">
+            <img src="../../assets/Plane-prop-repair01.jpg" alt="plane engine repair">
+          </ion-col>
+          <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4" 
+          class="ion-padding ion-align-self-center ion-text-left">
+            <p><b>Most aircraft owners</b> will go through the process of repairing or overhauling 
+              their aircraft engines 2 or 3 times in their lifetime, while FBO Directors of 
+              Maintenance may process 50 engine overhauls in their career. Large engine 
+              maintenance, repair, and overhaul companies process hundreds of major engine 
+              repairs and overhauls each year with focus on shop flow efficiency, maximizing 
+              their profitability, and not building an engine that meets customer needs at the 
+              most economical price. The turbine engine repair and overhaul processes are complex 
+              and continue to grow in complexity as companies seek to increase throughput, 
+              reduce overhead and maximize their profitability by outsourcing engine accessory 
+              and component overhaul and outsourcing warranty, billing, and other administrative 
+              functions to third party companies.
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+          <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4" 
+          class="ion-padding ion-align-self-center ion-text-left">
+            <p><b>Technical and academic</b>, I developed technical expertise by serving 
+              as a Jet Engine Technician for 10 years in the United States Air Force & 
+              Air Force Reserve working on Pratt and Whitney JT3, JT8 and F100 engines at 
+              both on-wing repair and overhaul maintenance levels. I received and have held 
+              an FAA Aircraft & Powerplant license since 1991. I received an associate’s 
+              degree in Airport Management and bachelor’s degrees in both Air Science and 
+              Aeronautical Engineering from Embry Riddle Aeronautical University’s Daytona 
+              Beach Campus prior to beginning my career specializing in aftermarket repair 
+              and overhaul of Pratt & Whitney Canada Engines in 1994.
+            </p>
+          </ion-col>
+          <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="4" 
+          class="ion-no-margin ion-padding ion-text-center">
+            <img src="../../assets/Phil02.jpg" alt="Phil Cusolito in front of plane">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="8"
+      class="ion-no-margin ion-padding home-col">
+        <p>
+          <b>My corporate career</b>, working in Pratt & Whitney Canada engine repair 
+          and overhaul management in began 1994 and has spanned almost 30 years. Starting 
+          as a Customer Service Manager at Airwork Miami, progressing to Program Manager 
+          at National Airmotive Corp./Rolls Royce, and becoming Vice President at ATech 
+          Turbine Components prior to Pratt and Whitney Canada recruiting me in 2002. 
+          In October 2020 I completed 18 years in technical sales as a Regional Sales 
+          Manager for Pratt & Whitney Canada and formed <b>MRO Management Services</b>.
+        </p>
+        <p>
+          <b>In this nearly three decades</b>, I have overseen and managed more than 
+          4,000 Repairs and Overhauls of P&WC engines while working for manufacturer 
+          authorized, independent, and engine manufacturer maintenance facilities. 
+          Throughout my career I continuously challenged internal corporate policies 
+          and agendas serving as an advocate for customers from as large as FedEx on 
+          their Cessna Caravan and ATR fleets, to single Turboprop aircraft owners. 
+          I worked at two of Pratt & Whitney Canada’s competitors and thoroughly 
+          understand the processes and industry. I am now working independently and 
+          formed <b>MRO Management Services</b> to represent owners, operators, and FBO’s 
+          directly as your <b>“Turbine Engine Advocate.”</b>  
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <img src="../../assets/plane-bluesky1.jpg" alt="plane on runway against blue sky" >
+      </ion-col>
+      <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="8"
+       class="ion-padding home-col ion-text-center">
+        <h3>
+          Don’t let your engines to be processed like all the rest or be a 
+          monthly/quarterly sales target. Allow me to prevent you from incurring 
+          excessive costs on your aircraft engine repair and/or overhaul. 
+        </h3>
+      </ion-col>
+    </ion-row>
+    <app-footer></app-footer>
+  </ion-grid>
 </ion-content>

@@ -9,6 +9,7 @@ import { ContactPageRoutingModule } from './contact-routing.module';
 import { ContactPage } from './contact.page';
 import { MyMenubarModule } from '../shared/components/my-menubar/my-menubar.module';
 import { FooterModule } from '../shared/components/footer/footer.module';
+import { ContactFormModule } from '../shared/components/contact-form/contact-form.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { FooterModule } from '../shared/components/footer/footer.module';
     IonicModule,
     ContactPageRoutingModule,
     MyMenubarModule,
-    FooterModule
+    FooterModule,
+    ContactFormModule
   ],
   declarations: [ContactPage]
 })

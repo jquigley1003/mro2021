@@ -3,6 +3,13 @@ ion-toolbar {
   --ion-color-base: transparent !important;
 }
 
+ion-toolbar img {
+  display: block;
+  padding: 5px 0;
+  height: 140px;
+  width: 221px;
+}
+
 ion-menu-button {
   color: var(--ion-color-tertiary);
 }

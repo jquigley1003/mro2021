@@ -1,10 +1,22 @@
 ion-row {
-  // background-image: url('../../../../assets/ContactFormBackground.jpg');
-  background-position: center;
-  background-repeat: none;
+  background-image: url('../../../../assets/beige-runway-background.jpg');
   padding-bottom: 1em;
 }
 
 ion-header {
   color: var(--ion-color-light);
+}
+
+ion-item {
+  --color: var(--ion-color-primary);
+  --inner-box-shadow: 5px;
+  box-shadow: inset ;
+  --border-radius: 10px;
+  --padding-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.directions {
+  font-weight: bold;
+  color: var(--ion-color-dark);
 }

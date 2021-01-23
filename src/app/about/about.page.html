@@ -35,12 +35,16 @@
       </ion-col>
     </ion-row>
     <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <h2>Find More Information By Clicking Below</h2>
+      </ion-col>
       <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="8" 
       class="ion-padding about-col ion-text-center">
         <ion-button color="tertiary" expand="block" (click)="toggleEngine()">
-          Engine Repair or Overhaul Management
+          Engine Repair
         </ion-button>
         <div *ngIf="showEngine">
+          <h1>Engine Repair or Overhaul Management</h1>
           <h3>From start to finish, proposal to invoice, we provide personalized 
             service including:</h3>
             <ion-list>
@@ -76,6 +80,7 @@
           Damage Control
         </ion-button>
         <div *ngIf="showDamage">
+          <h1>Damage Control</h1>
           <p class="ion-text-left">Many customers depend on engine maintenance facility shops to work in 
             their best interest, but often this does not go as expected, leaving 
             customers faced with a situation where they do not feel they are getting 
@@ -86,9 +91,10 @@
             situation and get your engine back on track and on budget.</p>
         </div>
         <ion-button color="tertiary" expand="block" (click)="toggleWarranty()">
-          Warranty Claim Negotiation Assistance
+          Warranty Claim
         </ion-button>
         <div *ngIf="showWarranty">
+          <h1>Warranty Claim Negotiation Assistance</h1>
           <p class="ion-text-left">Some aftermarket engine maintenance companies are not directly affiliated 
             with or authorized by the engine manufacturer. Some companies outsource 
             warranty administration functions and may not work in the best interest of 
@@ -97,9 +103,10 @@
             engine-maintenance company to assure you receive fair warranty coverage.</p>
         </div>
         <ion-button color="tertiary" expand="block" (click)="toggleInsurance()">
-          Insurance Claim Negotiation Assistance
+          Insurance Claim
         </ion-button>
         <div *ngIf="showInsurance">
+          <h1>Insurance Claim Negotiation Assistance</h1>
           <p class="ion-text-left">Insurance companies have claims adjusters on their payroll to mitigate 
             claims payout cost to their company. Most insurance adjusters handle both 
             airframe and engine for multiple manufacturers and are not experts on your 

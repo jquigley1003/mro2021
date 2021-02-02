@@ -23,6 +23,11 @@ export class AppComponent {
       icon: 'airplane'
     },
     {
+      title: 'Credentials',
+      url: '/credentials',
+      icon: 'shield-checkmark'
+    },
+    {
       title: 'Contact',
       url: '/contact',
       icon: 'phone-portrait'

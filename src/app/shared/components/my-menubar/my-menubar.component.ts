@@ -35,6 +35,10 @@ export class MyMenubarComponent implements OnInit, OnDestroy {
     this.navCtrl.navigateForward('/about');
   }
 
+  goToCredentials() {
+    this.navCtrl.navigateForward('/credentials');
+  }
+
   goToContact() {
     this.navCtrl.navigateForward('/contact');
   }

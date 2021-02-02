@@ -5,9 +5,6 @@
   <ion-grid class="ion-no-padding">
     <ion-row class="about-row">
       <ion-col size="12" class="ion-no-padding">
-        <!-- <ion-header [translucent]="true">
-          <app-my-menubar></app-my-menubar>
-        </ion-header> -->
         <div class="about-container mobile-bg-style-scroll">
           <div class="about-text-container">
             <ion-row>
@@ -41,7 +38,9 @@
       <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="8" 
       class="ion-padding about-col ion-text-center">
         <ion-button color="tertiary" expand="block" (click)="toggleEngine()">
-          Engine Repair
+          <ion-icon *ngIf="!showEngine" name="add-circle"></ion-icon>
+          <ion-icon *ngIf="showEngine" name="remove-circle"></ion-icon>
+          <span>Engine Repair</span>
         </ion-button>
         <div *ngIf="showEngine">
           <h1>Engine Repair or Overhaul Management</h1>
@@ -77,7 +76,9 @@
             </ion-list>
         </div>
         <ion-button color="tertiary" expand="block" (click)="toggleDamage()">
-          Damage Control
+          <ion-icon *ngIf="!showDamage" name="add-circle"></ion-icon>
+          <ion-icon *ngIf="showDamage" name="remove-circle"></ion-icon>
+          <span>Damage Control</span>
         </ion-button>
         <div *ngIf="showDamage">
           <h1>Damage Control</h1>
@@ -91,7 +92,9 @@
             situation and get your engine back on track and on budget.</p>
         </div>
         <ion-button color="tertiary" expand="block" (click)="toggleWarranty()">
-          Warranty Claim
+          <ion-icon *ngIf="!showWarranty" name="add-circle"></ion-icon>
+          <ion-icon *ngIf="showWarranty" name="remove-circle"></ion-icon>
+          <span>Warranty Claim</span>
         </ion-button>
         <div *ngIf="showWarranty">
           <h1>Warranty Claim Negotiation Assistance</h1>
@@ -103,7 +106,9 @@
             engine-maintenance company to assure you receive fair warranty coverage.</p>
         </div>
         <ion-button color="tertiary" expand="block" (click)="toggleInsurance()">
-          Insurance Claim
+          <ion-icon *ngIf="!showInsurance" name="add-circle"></ion-icon>
+          <ion-icon *ngIf="showInsurance" name="remove-circle"></ion-icon>
+          <span>Insurance Claim</span>
         </ion-button>
         <div *ngIf="showInsurance">
           <h1>Insurance Claim Negotiation Assistance</h1>

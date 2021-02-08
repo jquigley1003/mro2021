@@ -13,7 +13,7 @@ export class CredentialsPage implements OnInit {
 
   slideOpts = {
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
     loop: true
   }
@@ -40,13 +40,11 @@ export class CredentialsPage implements OnInit {
   }
 
   slideStart() {
-    console.log("You started the slider");
     this.slides.startAutoplay();
     this.showPrevNext = false;
   }
 
   slideStop() {
-    console.log("You stopped the slider");
     this.slides.stopAutoplay();
     this.showPrevNext = true;
   }

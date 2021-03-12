@@ -13,7 +13,7 @@ export class CredentialsPage implements OnInit {
 
   slideOpts = {
     autoplay: {
-      delay: 5000,
+      delay: 7000,
     },
     loop: true
   }
